@@ -1,0 +1,359 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Photographer Portfolio</title>  <!-- Font Awesome for Icons -->  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">  
+
+<style>  
+    /* Google Font */  
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');  
+
+    /* Global Styles */  
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }  
+    body { background: #f8f8f8; color: #333; text-align: center; }  
+
+    .container { max-width: 1200px; margin: auto; padding: 40px 20px; }  
+
+    h1, h2, h3 { margin-bottom: 20px; }  
+
+    /* Navigation */  
+    nav {  
+        background: #000;  
+        padding: 15px 0;  
+        position: sticky;  
+        top: 0;  
+        z-index: 1000;  
+    }  
+    nav ul {  
+        display: flex;  
+        justify-content: center;  
+        list-style: none;  
+    }  
+    nav ul li { margin: 0 15px; }  
+    nav ul li a {  
+        color: white;  
+        text-decoration: none;  
+        font-size: 1.2rem;  
+        transition: 0.3s;  
+    }  
+    nav ul li a:hover { color: #ffcc00; }  
+
+    /* Header */  
+    header {  
+        background: url('pr1.jpeg') center/cover no-repeat;  
+        height: 60vh;  
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+        color: white;  
+        font-size: 2rem;  
+        font-weight: bold;  
+        text-transform: uppercase;  
+        animation: fadeIn 2s ease-in-out;  
+    }  
+    @keyframes fadeIn {  
+        from { opacity: 0; }  
+        to { opacity: 1; }  
+    }  
+
+    /* About Section */  
+    .about {  
+        display: flex;  
+        align-items: center;  
+        flex-wrap: wrap;  
+        gap: 20px;  
+        text-align: left;  
+        justify-content: center;  
+    }  
+    .about img {  
+        width: 100%;  
+        max-width: 350px;  
+        border-radius: 10px;  
+    }  
+    .about div { max-width: 600px; }  
+
+    /* Portfolio */  
+    .portfolio-grid {  
+        display: grid;  
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+        gap: 10px;  
+    }  
+    .portfolio-grid img {  
+        width: 100%;  
+        height: 200px;  
+        object-fit: cover;  
+        border-radius: 5px;  
+    }  
+
+    /* Contact Form */  
+    form {  
+        display: flex;  
+        flex-direction: column;  
+        width: 100%;  
+        max-width: 400px;  
+        gap: 10px;  
+        margin: auto;  
+    }  
+    form input, form textarea {  
+        padding: 10px;  
+        border: 1px solid gray;  
+        border-radius: 5px;  
+        width: 100%;  
+    }  
+    form input[type="submit"] {  
+        background: #000;  
+        color: white;  
+        cursor: pointer;  
+        transition: 0.3s;  
+    }  
+    form input[type="submit"]:hover {  
+        background: #ff6600;  
+    }  
+
+    /* Table */  
+    table {  
+        width: 100%;  
+        border-collapse: collapse;  
+        margin-top: 20px;  
+    }  
+    table, th, td {  
+        border: 1px solid #333;  
+        padding: 10px;  
+    }  
+    th {  
+        background: #000;  
+        color: white;  
+    }  
+
+    /* Footer */  
+    footer {  
+        text-align: center;  
+        background: #333;  
+        color: white;  
+        padding: 20px;  
+        margin-top: 30px;  
+    }  
+</style>
+
+</head>  
+<body>  <!-- Navigation -->  
+<nav>  
+    <ul>  
+        <li><a href="#about">About</a></li>  
+        <li><a href="#portfolio">Portfolio</a></li>  
+        <li><a href="#contact">Contact</a></li>  
+    </ul>  
+</nav>  
+
+<!-- Header -->  
+<header>  
+    <h1>I'm a Photographer</h1>  
+</header>  
+
+<!-- About Section -->  
+<section id="about" class="container about">  
+    <img src="pexels-photo-598917.jpeg" alt="About Me">  
+    <div>  
+        <h2>About Me</h2>  
+        <p>Hello! My name is <b>Aavej Pirjade</b>. I am a professional photographer passionate about capturing moments that tell a story.    
+        I specialize in nature, wildlife, and portrait photography.</p>  
+        <br>
+        <h3>My Skills:</h3>  
+        <ul>  
+            <li>Landscape Photography</li>  
+            <li>Portrait Photography</li>  
+            <li>Photo Editing (Photoshop, Lightroom)</li>  
+            <li>Event Photography</li>  
+            <li>Street Photography</li>  
+        </ul>  
+        <br>
+                    <h3>Hobbies:</h3>
+            <ul type="squre">
+                <li>Exploring new places for photography</li>
+                <li>Editing and enhancing photos</li>
+                <li>Learning about new camera technologies</li>
+            </ul>
+    </div>  
+</section>  
+
+<!-- Portfolio -->  
+<section id="portfolio" class="container">  
+  <u>  <h2>My Portfolio</h2>  </u>
+    <div class="portfolio-grid">  
+        <img src="pexels-asadphoto-240526.jpg" alt="Portfolio 1">  
+        <img src="pexels-kovyrina-30872675.jpg" alt="Nature">  
+        <img src="pexels-photo-256490.jpeg" alt="City">  
+        <img src="pexels-hsapir-1054655.jpg" alt="Wildlife">  
+        <img src="pexels-eberhardgross-1366919.jpg" alt="Mountains">  
+         <img src="pexels-anthony-derosa-39577-216216.jpg">  
+        <img src="pexels-chevanon-312418.jpg">  
+        <img src="pexels-didsss-2675061.jpg">  
+        <img src="pexels-asadphoto-240526.jpg">  
+                      <img src="pexels-kovyrina-30872675.jpg" alt="Nature">  
+        <img src="pexels-photo-256490.jpeg" alt="City" height="100" width="100">  
+        <img src="pexels-hsapir-1054655.jpg" alt="Wildlife">  
+        <img src="pexels-eberhardgross-1366919.jpg" alt="Mountains">  
+        <img src="pexels-sebastian-palomino-933481-1875480.jpg" alt="Waterfall">  
+        <img src="pexels-pixabay-36744.jpg" alt="Sunset">  
+        <img src="pexels-pixabay-64219.jpg" alt="Sea">  
+        <img src="pexels-asadphoto-240526.jpg" alt="water">  
+        <img src="pexels-mali-142497.jpg" alt="forest">  
+        <img src="17425773408.jpg"  
+          alt="body">  
+        <img src="174257734084.jpg"  
+          alt="trip">  
+          <img src="174257734087.jpg"  
+          alt="sarveeeeeeh">  
+          <img src="pexels-fauxels-3183150.jpg"  alt="img">  
+         <img src="pexels-luisdalvan-1770809.jpg">
+          
+          
+          
+    </div>  
+</section>  
+
+<!-- Contact Form -->  
+<section id="contact" class="container">
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f8f8; color: #333; margin: 0; padding: 0; }
+        .container { max-width: 800px; margin: 50px auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; margin-bottom: 20px; }
+        form { display: flex; flex-wrap: wrap; gap: 20px; }
+        label { flex: 1 1 100%; margin-top: 10px; }
+        input, select, textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+        .half-width { flex: 1 1 48%; }
+        .full-width { flex: 1 1 100%; }
+        button { padding: 15px 30px; background-color: #000; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #333; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+   <u> <h1>Contact Us</h1> </u>
+    <form action="submit_form.php" method="post">
+        <div class="half-width">
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first_name" required>
+        </div>
+        <div class="half-width">
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last_name" required>
+        </div>
+        <div class="half-width">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="half-width">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="full-width">
+            <label for="instagram">Instagram Handle</label>
+            <input type="text" id="instagram" name="instagram">
+        </div>
+        <div class="full-width">
+            <label for="hear-about">How did you hear about us?</label>
+            <select id="hear-about" name="hear_about">
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="blog">Blog / Magazine</option>
+                <option value="planner">Planner</option>
+                <option value="recommendation">Recommendation</option>
+                <option value="google">Google</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="full-width">
+            <label for="services">What services are you interested in?</label>
+            <select id="services" name="services">
+                <option value="photo">Photo</option>
+                <option value="video">Video</option>
+                <option value="both">Both</option>
+            </select>
+        </div>
+        <div class="half-width">
+            <label for="event-date">Event Date</label>
+            <input type="date" id="event-date" name="event_date">
+        </div>
+        <div class="half-width">
+            <label for="ceremony-type">Type of wedding ceremony?</label>
+            <select id="ceremony-type" name="ceremony_type">
+                <option value="free">Free</option>
+                <option value="church">Church</option>
+                <option value="civil">Civil</option>
+                <option value="elopement">Elopement</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="full-width">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location">
+        </div>
+        <div class="full-width">
+            <label for="guest-count">How many guests do you expect?</label>
+            <input type="number" id="guest-count" name="guest_count">
+        </div>
+        <div class="full-width">
+            <label for="vendors">Other vendors?</label>
+            <input type="text" id="vendors" name="vendors">
+        </div>
+        <div class="full-width">
+            <label for="message">Tell us more about your wedding day plans! *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="full-width">
+            <label for="questions">Any questions for us? *</label>
+            <textarea id="questions" name="questions" rows="3" required></textarea>
+        </div>
+        <div class="full-width" style="text-align: center; margin-top: 20px;">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</section>  
+    <!-- Links Section -->
+<section id="links" class="container">
+  <u>  <h2>Follow Me</h2> </u>
+    <p>Stay connected and check out my latest photography work on social media.</p>
+    
+    <ul type="none">
+        <li><a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+        <li><a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://www.youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+    </ul>
+</section>
+
+<!-- Pricing Table -->  
+<section class="container">  
+ <u>   <h2>Photography Pricing</h2>  </u>
+    <table>  
+        <tr>  
+            <th>Package</th>  
+            <th>Price</th>  
+        </tr>  
+        <tr>  
+            <td>Basic Shoot</td>  
+            <td>$200</td>  
+        </tr>  
+        <tr>  
+            <td>Wedding Photography</td>  
+            <td>$1500</td>  
+        </tr>  
+        <tr>  
+            <td>Event Photography</td>  
+            <td>$500</td>  
+        </tr>  
+    </table>  
+</section>  
+
+<!-- Footer -->  
+<footer>  
+    <p>&copy; 2025 Photographer Portfolio. All Rights Reserved.</p>  
+</footer>
+
+</body>  
+</html>
